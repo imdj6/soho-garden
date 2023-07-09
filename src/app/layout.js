@@ -1,8 +1,4 @@
 import './globals.css'
-import { Mulish } from 'next/font/google'
-
-
-const inter = Mulish({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Soho Garden Cafe',
@@ -12,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body >
         {children}
       </body>
     </html>

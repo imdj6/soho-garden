@@ -11,14 +11,16 @@ export default function RepeatedSection({
       {aboutheading && (
         <h2 className="text-center text-4xl mt-10 mb-10">About Us</h2>
       )}
-      <div className="flex-row items-center md:flex  md:items-center p-5 md:p-16">
-        <div className=" text-center mx-auto md:w-1/2 mb-5">
-          <Image src={imagesrc} alt="imgL" width={300} height={300} className="rounded-full object-contain"/>
-        </div>
-        <div className="w-full md:w-1/2">
-          <p>{description}</p>
+      <div className="flex flex-col md:flex-row items-center mb-16 ">
+      <div className="max-w-md mx-auto mb-4 md:1/4">
+        <div className="w-48 h-48 mx-auto rounded-full overflow-hidden ">
+          <img src={imagesrc} alt="Image" className="object-cover w-full h-full rounded-full" />
         </div>
       </div>
+      <div className="md:w-3/4 md:p-10 p-5">
+      <p className="text-center text-gray-700">{description}</p>
+      </div>
+    </div>
     </>
   );
 }
